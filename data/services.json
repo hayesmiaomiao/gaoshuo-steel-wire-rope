@@ -1,0 +1,290 @@
+[
+  {
+    "slug": "custom-wire-rope-assemblies",
+    "service_name": "Custom Wire Rope Assemblies",
+    "short_description": "Custom wire rope assemblies built around buyer drawings, target length, cable construction, end fittings and application requirements.",
+    "problems_solved": [
+      "Need a cable assembly made to a drawing or sample",
+      "Need matched fittings, coating and length in one RFQ",
+      "Need repeatable assembly information for purchasing"
+    ],
+    "custom_options": [
+      "wire rope construction",
+      "material",
+      "coating",
+      "length",
+      "end fittings",
+      "packaging"
+    ],
+    "typical_applications": [
+      "industrial-assemblies",
+      "control-cables",
+      "architectural"
+    ],
+    "buyer_required_information": [
+      "drawing or sample",
+      "overall length",
+      "wire rope construction",
+      "diameter",
+      "material",
+      "end fitting type",
+      "quantity",
+      "application"
+    ],
+    "service_process": [
+      "Requirement review",
+      "Specification confirmation",
+      "Quotation",
+      "Assembly planning after order confirmation",
+      "Inspection and packaging confirmation"
+    ],
+    "related_products": [
+      "custom-wire-rope-cable-assembly",
+      "stainless-steel-wire-rope-assembly",
+      "wire-rope-assembly-with-eye-loops"
+    ],
+    "source_domains": [],
+    "verification_status": "source-approved",
+    "publishable": true,
+    "status": "published",
+    "notes": "Source-approved service content rewritten for Gaoshuo."
+  },
+  {
+    "slug": "cable-cutting",
+    "service_name": "Cable Cutting",
+    "short_description": "Cable cutting service for buyers who need wire rope or coated cable supplied to specified lengths before assembly or packaging.",
+    "problems_solved": [
+      "Need cut lengths for assembly production",
+      "Need repeatable cable lengths for kits",
+      "Need procurement-ready length information"
+    ],
+    "custom_options": [
+      "cut length",
+      "material",
+      "coating",
+      "quantity grouping",
+      "labeling",
+      "packaging"
+    ],
+    "typical_applications": [
+      "industrial-assemblies",
+      "architectural",
+      "fitness-equipment"
+    ],
+    "buyer_required_information": [
+      "cable type",
+      "diameter",
+      "required length",
+      "quantity",
+      "length tolerance if required",
+      "packaging requirement"
+    ],
+    "service_process": [
+      "Confirm cable specification",
+      "Confirm length and quantity",
+      "Prepare quotation",
+      "Cut cable after order confirmation",
+      "Pack by length or kit requirement"
+    ],
+    "related_products": [
+      "pvc-coated-wire-rope-assembly",
+      "lighting-suspension-cable-kit",
+      "gym-equipment-cable-assembly"
+    ],
+    "source_domains": [],
+    "verification_status": "source-approved",
+    "publishable": true,
+    "status": "published",
+    "notes": "No equipment capacity claims included."
+  },
+  {
+    "slug": "swaging-crimping",
+    "service_name": "Swaging and Crimping",
+    "short_description": "Swaging and crimping support for wire rope assemblies with sleeves, terminals, loops and fitting configurations confirmed by drawing or sample.",
+    "problems_solved": [
+      "Need fixed loop or terminal ends",
+      "Need sleeve or ferrule configuration reviewed",
+      "Need end fitting installation as part of cable assembly"
+    ],
+    "custom_options": [
+      "sleeve material",
+      "loop size",
+      "terminal type",
+      "thimble option",
+      "opposite-end configuration"
+    ],
+    "typical_applications": [
+      "industrial-assemblies",
+      "security-cables",
+      "architectural"
+    ],
+    "buyer_required_information": [
+      "wire rope diameter",
+      "material",
+      "loop size or terminal drawing",
+      "required fitting",
+      "application",
+      "quantity"
+    ],
+    "service_process": [
+      "Review fitting requirement",
+      "Confirm matching cable and sleeve",
+      "Quote assembly configuration",
+      "Crimp or swage after order confirmation",
+      "Inspect dimensions and packaging"
+    ],
+    "related_products": [
+      "wire-rope-assembly-with-eye-loops",
+      "wire-rope-sleeve",
+      "swage-terminal"
+    ],
+    "source_domains": [],
+    "verification_status": "source-approved",
+    "publishable": true,
+    "status": "published",
+    "notes": "No swaging force or equipment claims included."
+  },
+  {
+    "slug": "end-fitting-installation",
+    "service_name": "Custom End Fitting Installation",
+    "short_description": "End fitting installation service for hooks, loops, terminals, grippers, ball ends and threaded fittings used in custom cable assemblies.",
+    "problems_solved": [
+      "Need a cable supplied with installed fittings",
+      "Need matching terminal style for equipment or kit",
+      "Need fitting options reviewed before quotation"
+    ],
+    "custom_options": [
+      "hook type",
+      "eye loop",
+      "threaded terminal",
+      "ball end",
+      "cable gripper",
+      "stop sleeve"
+    ],
+    "typical_applications": [
+      "control-cables",
+      "fitness-equipment",
+      "architectural"
+    ],
+    "buyer_required_information": [
+      "fitting type",
+      "dimensions or drawing",
+      "cable diameter",
+      "material",
+      "application",
+      "quantity"
+    ],
+    "service_process": [
+      "Confirm fitting style",
+      "Match fitting to cable",
+      "Review drawing or sample",
+      "Quote installed assembly",
+      "Inspect fitting position and packaging"
+    ],
+    "related_products": [
+      "wire-rope-assembly-with-carabiner-hook",
+      "fitness-cable-with-ball-end",
+      "cable-gripper"
+    ],
+    "source_domains": [],
+    "verification_status": "source-approved",
+    "publishable": true,
+    "status": "published",
+    "notes": "Specific terminal dimensions must be confirmed by buyer data."
+  },
+  {
+    "slug": "coating-options",
+    "service_name": "Coating and Protection Options",
+    "short_description": "Coating option review for cable assemblies that need PVC, nylon or other protective covering based on handling, appearance and application requirements.",
+    "problems_solved": [
+      "Need coated cable for handling or appearance",
+      "Need color or surface option reviewed",
+      "Need coated cable matched with terminals"
+    ],
+    "custom_options": [
+      "PVC coating",
+      "nylon coating",
+      "coating color",
+      "coated diameter",
+      "uncoated end section"
+    ],
+    "typical_applications": [
+      "fitness-equipment",
+      "security-cables",
+      "industrial-assemblies"
+    ],
+    "buyer_required_information": [
+      "base cable material",
+      "target coating",
+      "color if required",
+      "finished diameter if required",
+      "end fitting type",
+      "application"
+    ],
+    "service_process": [
+      "Confirm base cable",
+      "Review coating requirement",
+      "Confirm fitting compatibility",
+      "Quote configuration",
+      "Inspect appearance and packaging"
+    ],
+    "related_products": [
+      "pvc-coated-wire-rope-assembly",
+      "pvc-coated-gym-cable",
+      "coiled-tool-safety-lanyard"
+    ],
+    "source_domains": [],
+    "verification_status": "source-approved",
+    "publishable": true,
+    "status": "published",
+    "notes": "No coating performance certification claims included."
+  },
+  {
+    "slug": "drawing-based-production",
+    "service_name": "Drawing-Based Cable Assembly",
+    "short_description": "Drawing-based cable assembly support for buyers who can provide cable layout, fitting dimensions, length, material and application details.",
+    "problems_solved": [
+      "Need quotation from drawing",
+      "Need existing cable sample converted into purchasing data",
+      "Need multiple cable options organized for sourcing"
+    ],
+    "custom_options": [
+      "drawing review",
+      "sample matching",
+      "terminal dimensions",
+      "length options",
+      "packaging and labeling"
+    ],
+    "typical_applications": [
+      "control-cables",
+      "fitness-equipment",
+      "industrial-assemblies"
+    ],
+    "buyer_required_information": [
+      "drawing or sample",
+      "critical dimensions",
+      "material request",
+      "coating request",
+      "terminal details",
+      "quantity",
+      "application notes"
+    ],
+    "service_process": [
+      "Collect drawing or sample details",
+      "Clarify missing specifications",
+      "Confirm product route",
+      "Quote selected configuration",
+      "Prepare production information after order confirmation"
+    ],
+    "related_products": [
+      "bowden-cable-assembly",
+      "push-pull-control-cable",
+      "gym-equipment-cable-assembly"
+    ],
+    "source_domains": [],
+    "verification_status": "source-approved",
+    "publishable": true,
+    "status": "published",
+    "notes": "Prototype and sample development can be handled through the same RFQ flow."
+  }
+]
