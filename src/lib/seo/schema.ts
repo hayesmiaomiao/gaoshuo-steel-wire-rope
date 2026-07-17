@@ -37,13 +37,14 @@ export function breadcrumbSchema(items: { name: string; path: string }[]) {
 }
 
 export function productSchema(product: Product) {
+  const images = [...new Set([product.image, ...product.galleryList].filter(Boolean))];
   return {
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.product_name,
     sku: product.sku,
     description: product.short_description,
-    image: product.image ? [absoluteUrl(product.image)] : undefined,
+    image: images.length > 0 ? images.map((image) => absoluteUrl(image)) : undefined,
     material: product.material || undefined,
     category: product.category || undefined,
     brand: {

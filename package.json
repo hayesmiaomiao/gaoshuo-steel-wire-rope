@@ -22,6 +22,18 @@
     "check:duplicate-products": "tsx scripts/check-duplicate-products.ts",
     "audit:reports": "tsx scripts/generate-audit-reports.ts",
     "report:products": "tsx scripts/generate-product-report.ts",
+    "images:audit": "tsx scripts/audit-product-images.ts",
+    "images:folders": "tsx scripts/check-product-image-folders.ts",
+    "images:rename:plan": "tsx scripts/rename-product-source-images.ts --plan",
+    "images:rename": "tsx scripts/rename-product-source-images.ts --execute",
+    "images:rename:rollback": "tsx scripts/rename-product-source-images.ts --rollback-latest",
+    "images:main:plan": "tsx scripts/select-product-main-images.ts --plan",
+    "images:main:select": "tsx scripts/select-product-main-images.ts --execute",
+    "images:main:rollback": "tsx scripts/select-product-main-images.ts --rollback-latest",
+    "images:process:plan": "tsx scripts/process-product-images.ts --plan",
+    "images:process": "tsx scripts/process-product-images.ts --execute",
+    "images:process:force": "tsx scripts/process-product-images.ts --execute --force",
+    "images:check": "tsx scripts/check-product-images.ts",
     "test": "vitest run",
     "verify": "npm run lint && npm run typecheck && npm run validate:products && npm run check:content && npm run check:duplicate-products && npm run check:brand-migration && npm run check:contact-leaks && npm run check:links && npm run check:seo && npm run test && npm run build"
   },
@@ -32,6 +44,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.60.0",
+    "sharp": "^0.35.3",
     "zod": "^3.25.76"
   },
   "devDependencies": {

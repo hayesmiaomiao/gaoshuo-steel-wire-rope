@@ -10,11 +10,13 @@ export function createMetadata({
   title,
   description,
   path,
+  image,
   noindex = false
 }: {
   title: string;
   description: string;
   path: string;
+  image?: string;
   noindex?: boolean;
 }): Metadata {
   const url = absoluteUrl(path);
@@ -29,12 +31,14 @@ export function createMetadata({
       description,
       url,
       siteName: siteConfig.brandName,
-      type: "website"
+      type: "website",
+      images: image ? [{ url: absoluteUrl(image), alt: title }] : undefined
     },
     twitter: {
       card: "summary_large_image",
       title,
-      description
+      description,
+      images: image ? [absoluteUrl(image)] : undefined
     }
   };
 }

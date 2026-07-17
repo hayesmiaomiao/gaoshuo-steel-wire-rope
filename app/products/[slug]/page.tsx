@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
-import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
+import { ProductGallery } from "@/components/product/ProductGallery";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SpecificationTable } from "@/components/product/SpecificationTable";
 import { DownloadCard } from "@/components/ui/DownloadCard";
@@ -23,7 +23,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return createMetadata({
     title: product.seo_title || product.product_name,
     description: product.seo_description || product.short_description,
-    path: `/products/${product.slug}`
+    path: `/products/${product.slug}`,
+    image: product.image
   });
 }
 
@@ -49,7 +50,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <div className="container">
           <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Products", href: "/products" }, { name: product.product_name, href: `/products/${product.slug}` }]} />
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-            <PlaceholderImage alt={`${product.product_name} product placeholder`} priority />
+            <ProductGallery product={product} />
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.14em] text-[#E8820C]">{product.category}</p>
               <h1 className="mt-3 text-4xl font-black text-[#171717]">{product.product_name}</h1>
