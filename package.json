@@ -42,7 +42,6 @@
     "specs:report": "tsx scripts/generate-specification-completeness-report.ts",
     "test": "vitest run",
     "test:production-client": "playwright test tests/production-client-errors.spec.ts --reporter=line",
-    "test:production-styles": "playwright test tests/production-styles.spec.ts --reporter=line",
     "verify": "npm run lint && npm run typecheck && npm run specs:validate && npm run specs:report && npm run validate:products && npm run check:content && npm run check:duplicate-products && npm run check:brand-migration && npm run check:contact-leaks && npm run check:links && npm run check:seo && npm run test && npm run build"
   },
   "dependencies": {
