@@ -3,7 +3,7 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { ProductGallery } from "@/components/product/ProductGallery";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SpecificationTable } from "@/components/product/SpecificationTable";
-import { TechnicalSpecificationTable } from "@/components/product/TechnicalSpecificationTable";
+import { DownloadCard } from "@/components/ui/DownloadCard";
 import { RelatedProducts } from "@/components/product/RelatedProducts";
 import { RFQForm } from "@/components/rfq/RFQForm";
 import { CTASection } from "@/components/ui/CTASection";
@@ -11,9 +11,6 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, productSchema } from "@/lib/seo/schema";
 import { createMetadata } from "@/lib/seo/metadata";
 import { getProductBySlug, getPublishedProducts, getRelatedProducts } from "@/lib/products/data";
-import { getProductSpecificationBySku } from "@/lib/products/specifications";
-import { getSpecificationSourcePresentation } from "@/lib/products/specification-sources";
-import { isConfirmedSpecificationValue } from "@/lib/products/specification-model";
 
 export function generateStaticParams() {
   return getPublishedProducts().map((product) => ({ slug: product.slug }));
@@ -36,8 +33,6 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const product = getProductBySlug(slug);
   if (!product) notFound();
   const related = getRelatedProducts(product);
-  const specification = getProductSpecificationBySku(product.sku);
-  const sourcePresentation = getSpecificationSourcePresentation(product.sku);
 
   return (
     <>
@@ -48,7 +43,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             { name: "Products", path: "/products" },
             { name: product.product_name, path: `/products/${product.slug}` }
           ]),
-          productSchema(product, specification)
+          productSchema(product)
         ]}
       />
       <section className="py-12">
@@ -66,6 +61,11 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                   rows={[
                     { label: "SKU", value: product.sku },
                     { label: "Product Type", value: product.product_type },
+                    { label: "Construction", value: product.construction },
+                    { label: "Material", value: product.material },
+                    { label: "Finish", value: product.finish },
+                    { label: "Coating", value: product.coating },
+                    { label: "End Fitting", value: product.end_fitting },
                     { label: "Applications", value: product.applicationsList }
                   ]}
                 />
@@ -81,7 +81,39 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               </section>
               <section>
                 <SectionHeading title="Technical Specification" />
-                <TechnicalSpecificationTable category={product.category} specification={specification} approximateFields={sourcePresentation.approximateFields} />
+                <SpecificationTable
+                  caption="Technical specification table"
+                  rows={[
+                    { label: "Diameter Min (mm)", value: product.diameter_min_mm },
+                    { label: "Diameter Max (mm)", value: product.diameter_max_mm },
+                    { label: "Grade", value: product.grade },
+                    { label: "Core", value: product.core },
+                    { label: "Lay", value: product.lay },
+                    { label: "Tensile Grade", value: product.tensile_grade },
+                    { label: "Breaking Load", value: product.breaking_load },
+                    { label: "Tolerance", value: product.tolerance },
+                    { label: "Length Options", value: product.length_options },
+                    { label: "End Fitting", value: product.end_fitting },
+                    { label: "Standards", value: product.standards },
+                    { label: "Certifications", value: product.certifications }
+                  ]}
+                />
+              </section>
+              <section>
+                <SectionHeading title="Available Options" />
+                <SpecificationTable
+                  caption="Available product options"
+                  rows={[
+                    { label: "Customization", value: product.customizationList },
+                    { label: "Packaging", value: product.packaging },
+                    { label: "MOQ", value: product.moq },
+                    { label: "Lead Time", value: product.lead_time }
+                  ]}
+                />
+              </section>
+              <section>
+                <SectionHeading title="Materials and Construction" description="Material, construction and application details are shown only when available in reviewed product data. Submit your drawing for evaluation when the exact configuration is not listed." />
+                <SpecificationTable caption="Materials and construction" rows={[{ label: "Material Options", value: product.material }, { label: "Construction", value: product.construction }, { label: "Coating Options", value: product.coating || "Specification depends on the selected configuration" }, { label: "End Fitting Options", value: product.end_fitting || "Please confirm with our team" }]} />
               </section>
               <section>
                 <SectionHeading title="Typical Applications" />
@@ -98,6 +130,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               <section>
                 <SectionHeading title="Quality and Inspection" description="Quality requirements should be confirmed by drawing, specification or purchase order. Verified testing claims are not added until documentation is available." />
               </section>
+              <DownloadCard datasheet={product.datasheet} />
               <section>
                 <SectionHeading title="Product FAQ" />
                 <div className="grid gap-4">
@@ -118,7 +151,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             </div>
             <aside>
               <SectionHeading title="Request Product Quote" />
-              <RFQForm sourcePage={`/products/${product.slug}`} product={product.product_name} productSku={product.sku} construction={isConfirmedSpecificationValue(specification?.construction) ? specification?.construction : ""} />
+              <RFQForm sourcePage={`/products/${product.slug}`} product={product.product_name} productSku={product.sku} construction={product.construction} />
             </aside>
           </div>
           <RelatedProducts products={related} />

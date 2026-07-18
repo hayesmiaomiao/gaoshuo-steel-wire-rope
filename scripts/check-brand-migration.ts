@@ -21,15 +21,10 @@ function walk(dir: string): string[] {
 }
 
 const errors: string[] = [];
-const allowedSourceAuditFiles = new Set([
-  path.join("data", "product-source-mapping.csv"),
-  path.join("data", "product-specification-sources.csv")
-]);
 
 for (const file of [...scanRoots.flatMap(walk), ...standaloneFiles.filter((file) => fs.existsSync(file))]) {
   const relative = path.relative(process.cwd(), file);
   if (relative.startsWith("research\\")) continue;
-  if (allowedSourceAuditFiles.has(relative)) continue;
   if (relative === path.join("scripts", "check-brand-migration.ts") || relative === path.join("scripts", "check-contact-leaks.ts")) continue;
   const text = fs.readFileSync(file, "utf8");
   for (const term of blockedTerms) {
