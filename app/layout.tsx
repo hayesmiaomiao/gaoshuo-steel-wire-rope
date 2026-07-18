@@ -7,10 +7,6 @@ import { organizationSchema, websiteSchema } from "@/lib/seo/schema";
 import { siteConfig } from "@/config/site";
 import { env } from "@/lib/env";
 
-// Keep pages statically generated while preventing a CDN from retaining HTML
-// that references chunks removed by a later deployment.
-export const revalidate = 60;
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.domain),
   title: {
