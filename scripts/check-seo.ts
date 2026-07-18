@@ -24,7 +24,7 @@ function addMeta(title: string, description: string, path: string) {
   ["/capabilities", "Wire Rope Custom Capabilities", "Custom wire rope assembly, cutting, swaging, terminal installation and packaging capability framework."],
   ["/manufacturing", "Manufacturing Framework", "Manufacturing capability framework for Gaoshuo Steel Wire Rope with unverified claims intentionally excluded."],
   ["/quality-control", "Quality Control", "Quality control workflow framework for steel wire rope procurement and verified inspection documentation."],
-  ["/about", "About Gaoshuo Steel Wire Rope", "About Gaoshuo Steel Wire Rope and the verified-information approach for B2B procurement."],
+  ["/about", "About Zhongshan Gaoshuo", "Learn about Zhongshan Gaoshuo Technology Co., Ltd., its business scope and custom wire rope, control cable and cable assembly solutions."],
   ["/resources", "Steel Wire Rope Resources", "Technical guides, comparisons and resources for steel wire rope procurement."],
   ["/services", "Wire Rope Assembly Services", "Source-approved service migration framework for custom wire rope assemblies, cable cutting, swaging, terminal installation and packaging."],
   ["/contact", "Contact", "Contact Gaoshuo Steel Wire Rope for steel wire rope and assembly inquiries."],

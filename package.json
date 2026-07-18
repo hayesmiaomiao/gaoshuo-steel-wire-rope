@@ -34,8 +34,14 @@
     "images:process": "tsx scripts/process-product-images.ts --execute",
     "images:process:force": "tsx scripts/process-product-images.ts --execute --force",
     "images:check": "tsx scripts/check-product-images.ts",
+    "specs:sources": "tsx scripts/generate-product-specification-source-data.ts",
+    "specs:candidates": "tsx scripts/generate-product-specification-source-data.ts",
+    "specs:sync": "tsx scripts/sync-product-specifications.ts",
+    "specs:sync:force": "tsx scripts/sync-product-specifications.ts --force",
+    "specs:validate": "tsx scripts/validate-product-specifications.ts",
+    "specs:report": "tsx scripts/generate-specification-completeness-report.ts",
     "test": "vitest run",
-    "verify": "npm run lint && npm run typecheck && npm run validate:products && npm run check:content && npm run check:duplicate-products && npm run check:brand-migration && npm run check:contact-leaks && npm run check:links && npm run check:seo && npm run test && npm run build"
+    "verify": "npm run lint && npm run typecheck && npm run specs:validate && npm run specs:report && npm run validate:products && npm run check:content && npm run check:duplicate-products && npm run check:brand-migration && npm run check:contact-leaks && npm run check:links && npm run check:seo && npm run test && npm run build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

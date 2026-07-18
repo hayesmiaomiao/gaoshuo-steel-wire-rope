@@ -20,10 +20,17 @@ function walk(dir: string): string[] {
 }
 
 const errors: string[] = [];
+const sourceAuditFiles = new Set([
+  path.join("data", "product-source-mapping.csv"),
+  path.join("data", "product-specification-sources.csv")
+]);
 
 for (const file of scanRoots.flatMap(walk)) {
   const relative = path.relative(process.cwd(), file);
-  const text = fs.readFileSync(file, "utf8");
+  const originalText = fs.readFileSync(file, "utf8");
+  const text = sourceAuditFiles.has(relative)
+    ? originalText.replace(/https:\/\/(?:www\.|m\.)?wireropeassy\.com\/[^\s,"']*/gi, "[authorized-source-url]")
+    : originalText;
   for (const blocked of blockedPatterns) {
     if (blocked.pattern.test(text)) errors.push(`${relative} may contain ${blocked.label}`);
     blocked.pattern.lastIndex = 0;
