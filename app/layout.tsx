@@ -1,27 +1,28 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { Header } from "@/components/layout/Header";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { getCompany } from "@/lib/data/company";
+import { defaultDescription, getSiteUrl, isStagingNoindex, siteName } from "@/lib/seo/metadata";
 import { organizationSchema, websiteSchema } from "@/lib/seo/schema";
-import { siteConfig } from "@/config/site";
-import { env } from "@/lib/env";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.domain),
+  metadataBase: getSiteUrl(),
   title: {
-    default: siteConfig.defaultTitle,
-    template: `%s | ${siteConfig.brandName}`
+    default: "Custom Wire Rope Assemblies and Cable Solutions",
+    template: `%s | ${siteName}`
   },
-  description: siteConfig.defaultDescription,
-  robots: env.stagingNoindex ? { index: false, follow: false } : { index: true, follow: true }
+  description: defaultDescription,
+  robots: isStagingNoindex() ? { index: false, follow: false } : { index: true, follow: true }
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const company = getCompany();
   return (
     <html lang="en">
       <body>
-        <JsonLd data={[organizationSchema(), websiteSchema()]} />
+        <JsonLd data={[organizationSchema(company), websiteSchema()]} />
         <Header />
         <main>{children}</main>
         <Footer />

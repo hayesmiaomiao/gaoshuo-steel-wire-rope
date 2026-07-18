@@ -1,18 +1,28 @@
+import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
+import { PageHeader } from "@/components/ui/PageHeader";
 import { createMetadata } from "@/lib/seo/metadata";
 
-export const metadata = createMetadata({ title: "Privacy Policy", description: "Privacy policy for Gaoshuo Steel Wire Rope inquiry website.", path: "/privacy-policy" });
+export const metadata = createMetadata({
+  title: "Privacy Policy",
+  description: "Privacy information for the Gaoshuo Steel Wire Rope website and inquiry interface.",
+  path: "/privacy-policy"
+});
 
 export default function PrivacyPolicyPage() {
   return (
-    <section className="py-12">
-      <div className="container max-w-3xl">
-        <h1 className="text-4xl font-black text-[#171717]">Privacy Policy</h1>
-        <div className="mt-8 grid gap-6 leading-7 text-[#444]">
-          <p>Gaoshuo Steel Wire Rope collects inquiry information only to respond to B2B requests, review product requirements and prepare quotations.</p>
-          <p>Uploaded drawings or specifications should be shared only when you are authorized to provide them. Do not submit confidential information unless a separate agreement is in place.</p>
-          <p>Analytics and marketing tools are optional and should be configured according to applicable consent and privacy requirements.</p>
+    <>
+      <div className="container"><Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Privacy Policy" }]} /></div>
+      <PageHeader eyebrow="Website information" title="Privacy Policy" description="How information entered into this website is handled during the current staging phase." />
+      <section className="section">
+        <div className="container prose">
+          <h2>Current inquiry status</h2>
+          <p>The online inquiry interface is currently a user-interface preview. It does not transmit form information to email, a database, a CRM or another external service.</p>
+          <h2>Technical operation</h2>
+          <p>The website may process standard technical request data required to deliver pages and static assets. No analytics or advertising integration is configured by this rebuild.</p>
+          <h2>Future updates</h2>
+          <p>This policy should be updated before an official inquiry delivery channel, analytics service or additional data-processing integration is enabled.</p>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

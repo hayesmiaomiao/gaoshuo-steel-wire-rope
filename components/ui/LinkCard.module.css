@@ -1,0 +1,27 @@
+.card {
+  padding: 1.6rem;
+  border: 1px solid var(--color-border);
+  background: white;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.card h2 a {
+  color: var(--color-text-dark);
+  text-decoration: none;
+}
+
+.card p {
+  margin: 0.85rem 0 1.25rem;
+  color: #61615d;
+  line-height: 1.7;
+}
+
+.link {
+  color: #8b4a00;
+  font-weight: 800;
+  text-decoration: none;
+}

@@ -1,0 +1,753 @@
+[
+  {
+    "sku": "GS-WRA-001",
+    "slug": "custom-wire-rope-cable-assembly",
+    "name": "Custom Wire Rope Cable Assembly",
+    "category": "wire-rope-assemblies",
+    "summary": "Custom Wire Rope Cable Assembly for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Custom Wire Rope Cable Assembly for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "industrial-assemblies",
+      "control-cables"
+    ],
+    "customization": [
+      "length",
+      "wire rope construction",
+      "diameter",
+      "end fitting",
+      "packaging"
+    ],
+    "features": [
+      "custom length",
+      "material selection",
+      "terminal selection",
+      "drawing-based assembly"
+    ],
+    "image": "/images/products/custom-wire-rope-cable-assembly/main.webp",
+    "gallery": [],
+    "featured": true
+  },
+  {
+    "sku": "GS-WRA-002",
+    "slug": "stainless-steel-wire-rope-assembly",
+    "name": "Stainless Steel Wire Rope Assembly",
+    "category": "wire-rope-assemblies",
+    "summary": "Stainless Steel Wire Rope Assembly for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Stainless Steel Wire Rope Assembly for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "marine",
+      "architectural",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "length",
+      "wire rope construction",
+      "diameter",
+      "end fitting",
+      "packaging"
+    ],
+    "features": [
+      "corrosion-focused material option",
+      "custom terminal selection",
+      "cut-to-length assembly",
+      "drawing review"
+    ],
+    "image": "/images/products/stainless-steel-wire-rope-assembly/main.webp",
+    "gallery": [],
+    "featured": true
+  },
+  {
+    "sku": "GS-WRA-003",
+    "slug": "galvanized-wire-rope-assembly",
+    "name": "Galvanized Wire Rope Assembly",
+    "category": "wire-rope-assemblies",
+    "summary": "Galvanized Wire Rope Assembly for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Galvanized Wire Rope Assembly for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "industrial-assemblies",
+      "crane-and-lifting"
+    ],
+    "customization": [
+      "length",
+      "wire rope construction",
+      "diameter",
+      "end fitting",
+      "packaging"
+    ],
+    "features": [
+      "galvanized finish option",
+      "custom length",
+      "end fitting selection",
+      "packaging review"
+    ],
+    "image": "/images/products/galvanized-wire-rope-assembly/main.webp",
+    "gallery": [
+      "/images/products/galvanized-wire-rope-assembly/detail-02.webp",
+      "/images/products/galvanized-wire-rope-assembly/detail-03.webp",
+      "/images/products/galvanized-wire-rope-assembly/detail-04.webp"
+    ],
+    "featured": false
+  },
+  {
+    "sku": "GS-WRA-004",
+    "slug": "pvc-coated-wire-rope-assembly",
+    "name": "PVC Coated Wire Rope Assembly",
+    "category": "wire-rope-assemblies",
+    "summary": "PVC Coated Wire Rope Assembly for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "PVC Coated Wire Rope Assembly for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "security-cables",
+      "fitness-equipment",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "length",
+      "wire rope construction",
+      "diameter",
+      "end fitting",
+      "packaging"
+    ],
+    "features": [
+      "PVC coating option",
+      "color selection on request",
+      "custom length",
+      "fitting installation"
+    ],
+    "image": "/images/products/pvc-coated-wire-rope-assembly/main.webp",
+    "gallery": [],
+    "featured": true
+  },
+  {
+    "sku": "GS-WRA-005",
+    "slug": "wire-rope-assembly-with-eye-loops",
+    "name": "Wire Rope Assembly with Eye Loops",
+    "category": "wire-rope-assemblies",
+    "summary": "Wire Rope Assembly with Eye Loops for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Wire Rope Assembly with Eye Loops for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "architectural",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "length",
+      "wire rope construction",
+      "diameter",
+      "end fitting",
+      "packaging"
+    ],
+    "features": [
+      "loop end configuration",
+      "optional thimble support",
+      "custom cable length",
+      "assembly drawing review"
+    ],
+    "image": "/images/products/wire-rope-assembly-with-eye-loops/main.webp",
+    "gallery": [],
+    "featured": false
+  },
+  {
+    "sku": "GS-WRA-006",
+    "slug": "wire-rope-assembly-with-carabiner-hook",
+    "name": "Wire Rope Assembly with Carabiner Hook",
+    "category": "wire-rope-assemblies",
+    "summary": "Wire Rope Assembly with Carabiner Hook for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Wire Rope Assembly with Carabiner Hook for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "security-cables",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "length",
+      "wire rope construction",
+      "diameter",
+      "end fitting",
+      "packaging"
+    ],
+    "features": [
+      "hook attachment option",
+      "custom cable length",
+      "coated or uncoated cable options",
+      "application review"
+    ],
+    "image": "/images/products/wire-rope-assembly-with-carabiner-hook/main.webp",
+    "gallery": [
+      "/images/products/wire-rope-assembly-with-carabiner-hook/terminal-02.webp",
+      "/images/products/wire-rope-assembly-with-carabiner-hook/terminal-03.webp",
+      "/images/products/wire-rope-assembly-with-carabiner-hook/terminal-04.webp"
+    ],
+    "featured": true
+  },
+  {
+    "sku": "GS-LAN-001",
+    "slug": "coiled-tool-safety-lanyard",
+    "name": "Coiled Tool Safety Lanyard",
+    "category": "tool-safety-lanyards",
+    "summary": "Coiled Tool Safety Lanyard for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Coiled Tool Safety Lanyard for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "security-cables",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "coil length",
+      "extended length",
+      "end fitting",
+      "coating color",
+      "packaging"
+    ],
+    "features": [
+      "coiled cable format",
+      "stretchable retention design",
+      "multiple end fittings",
+      "custom length review"
+    ],
+    "image": "/images/products/coiled-tool-safety-lanyard/main.webp",
+    "gallery": [],
+    "featured": true
+  },
+  {
+    "sku": "GS-LAN-002",
+    "slug": "tool-lanyard-with-carabiner",
+    "name": "Tool Lanyard with Carabiner",
+    "category": "tool-safety-lanyards",
+    "summary": "Tool Lanyard with Carabiner for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Tool Lanyard with Carabiner for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "security-cables",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "lanyard length",
+      "carabiner type",
+      "coating",
+      "labeling",
+      "packaging"
+    ],
+    "features": [
+      "carabiner attachment",
+      "coated cable option",
+      "custom length",
+      "bulk packaging review"
+    ],
+    "image": "/images/products/tool-lanyard-with-carabiner/main.webp",
+    "gallery": [],
+    "featured": false
+  },
+  {
+    "sku": "GS-LAN-003",
+    "slug": "tool-lanyard-with-dual-hooks",
+    "name": "Tool Lanyard with Dual Hooks",
+    "category": "tool-safety-lanyards",
+    "summary": "Tool Lanyard with Dual Hooks for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Tool Lanyard with Dual Hooks for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "security-cables",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "hook type",
+      "cable length",
+      "coating color",
+      "terminal reinforcement"
+    ],
+    "features": [
+      "two-end hook configuration",
+      "tool retention use",
+      "custom end fittings",
+      "drawing review"
+    ],
+    "image": "/images/products/tool-lanyard-with-dual-hooks/main.webp",
+    "gallery": [],
+    "featured": false
+  },
+  {
+    "sku": "GS-LAN-004",
+    "slug": "spring-coil-safety-lanyard",
+    "name": "Spring Coil Safety Lanyard",
+    "category": "tool-safety-lanyards",
+    "summary": "Spring Coil Safety Lanyard for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Spring Coil Safety Lanyard for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "security-cables",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "coil diameter",
+      "extended length",
+      "end fitting",
+      "coating color"
+    ],
+    "features": [
+      "spring coil format",
+      "compact return length",
+      "custom attachment options",
+      "sample-based development"
+    ],
+    "image": "/images/products/spring-coil-safety-lanyard/main.webp",
+    "gallery": [],
+    "featured": false
+  },
+  {
+    "sku": "GS-SUS-001",
+    "slug": "lighting-suspension-cable-kit",
+    "name": "Lighting Suspension Cable Kit",
+    "category": "suspension-hanging-kits",
+    "summary": "Lighting Suspension Cable Kit for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Lighting Suspension Cable Kit for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "architectural",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "cable length",
+      "gripper type",
+      "ceiling fitting",
+      "panel fitting",
+      "packaging"
+    ],
+    "features": [
+      "adjustable suspension concept",
+      "kit-based sourcing",
+      "fitting selection",
+      "drawing-based configuration"
+    ],
+    "image": "/images/products/lighting-suspension-cable-kit/main.webp",
+    "gallery": [],
+    "featured": true
+  },
+  {
+    "sku": "GS-SUS-002",
+    "slug": "adjustable-cable-gripper-kit",
+    "name": "Adjustable Cable Gripper Kit",
+    "category": "suspension-hanging-kits",
+    "summary": "Adjustable Cable Gripper Kit for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Adjustable Cable Gripper Kit for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "architectural",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "gripper style",
+      "cable length",
+      "thread type",
+      "mounting fitting",
+      "packaging"
+    ],
+    "features": [
+      "adjustable gripper option",
+      "matched cable supply",
+      "thread and fitting review",
+      "kit packaging"
+    ],
+    "image": "/images/products/adjustable-cable-gripper-kit/main.webp",
+    "gallery": [],
+    "featured": false
+  },
+  {
+    "sku": "GS-SUS-003",
+    "slug": "led-panel-suspension-kit",
+    "name": "LED Panel Suspension Kit",
+    "category": "suspension-hanging-kits",
+    "summary": "LED Panel Suspension Kit for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "LED Panel Suspension Kit for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "architectural"
+    ],
+    "customization": [
+      "kit length",
+      "panel attachment",
+      "ceiling attachment",
+      "packaging"
+    ],
+    "features": [
+      "panel hanging configuration",
+      "adjustable cable option",
+      "matched fittings",
+      "project packaging review"
+    ],
+    "image": "/images/products/led-panel-suspension-kit/main.webp",
+    "gallery": [],
+    "featured": false
+  },
+  {
+    "sku": "GS-SUS-004",
+    "slug": "sign-hanging-cable-kit",
+    "name": "Sign Hanging Cable Kit",
+    "category": "suspension-hanging-kits",
+    "summary": "Sign Hanging Cable Kit for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Sign Hanging Cable Kit for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "architectural",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "cable length",
+      "end fitting",
+      "finish",
+      "kit packaging"
+    ],
+    "features": [
+      "sign suspension use",
+      "custom attachment options",
+      "coated or uncoated cable",
+      "bulk kit preparation"
+    ],
+    "image": "/images/products/sign-hanging-cable-kit/main.webp",
+    "gallery": [
+      "/images/products/sign-hanging-cable-kit/detail-02.webp",
+      "/images/products/sign-hanging-cable-kit/detail-03.webp",
+      "/images/products/sign-hanging-cable-kit/detail-04.webp"
+    ],
+    "featured": false
+  },
+  {
+    "sku": "GS-CTL-001",
+    "slug": "bowden-cable-assembly",
+    "name": "Bowden Cable Assembly",
+    "category": "control-brake-cables",
+    "summary": "Bowden Cable Assembly for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Bowden Cable Assembly for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "control-cables",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "outer conduit",
+      "inner cable",
+      "stroke length",
+      "terminal type",
+      "sample matching"
+    ],
+    "features": [
+      "control cable format",
+      "inner and outer cable review",
+      "terminal matching",
+      "sample-based production"
+    ],
+    "image": "/images/products/bowden-cable-assembly/main.webp",
+    "gallery": [
+      "/images/products/bowden-cable-assembly/construction-01.webp",
+      "/images/products/bowden-cable-assembly/construction-02.webp",
+      "/images/products/bowden-cable-assembly/construction-03.webp"
+    ],
+    "featured": true
+  },
+  {
+    "sku": "GS-CTL-002",
+    "slug": "push-pull-control-cable",
+    "name": "Push Pull Control Cable",
+    "category": "control-brake-cables",
+    "summary": "Push Pull Control Cable for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Push Pull Control Cable for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "control-cables",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "travel length",
+      "conduit length",
+      "terminal type",
+      "mounting hardware"
+    ],
+    "features": [
+      "push-pull actuation use",
+      "custom travel review",
+      "terminal configuration",
+      "drawing-based quotation"
+    ],
+    "image": "/images/products/push-pull-control-cable/main.webp",
+    "gallery": [],
+    "featured": false
+  },
+  {
+    "sku": "GS-CTL-003",
+    "slug": "brake-cable-assembly",
+    "name": "Brake Cable Assembly",
+    "category": "control-brake-cables",
+    "summary": "Brake Cable Assembly for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Brake Cable Assembly for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "control-cables",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "inner cable length",
+      "housing length",
+      "terminal type",
+      "coating",
+      "sample matching"
+    ],
+    "features": [
+      "brake cable configuration",
+      "custom housing length",
+      "terminal matching",
+      "application review"
+    ],
+    "image": "/images/products/brake-cable-assembly/main.webp",
+    "gallery": [
+      "/images/products/brake-cable-assembly/construction-02.webp",
+      "/images/products/brake-cable-assembly/construction-03.webp",
+      "/images/products/brake-cable-assembly/construction-04.webp",
+      "/images/products/brake-cable-assembly/construction-05.webp"
+    ],
+    "featured": false
+  },
+  {
+    "sku": "GS-CTL-004",
+    "slug": "throttle-control-cable",
+    "name": "Throttle Control Cable",
+    "category": "control-brake-cables",
+    "summary": "Throttle Control Cable for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Throttle Control Cable for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "control-cables",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "travel length",
+      "outer casing",
+      "inner cable",
+      "terminal type"
+    ],
+    "features": [
+      "throttle control use",
+      "custom travel and length",
+      "fitting selection",
+      "drawing or sample review"
+    ],
+    "image": "/images/products/throttle-control-cable/main.webp",
+    "gallery": [],
+    "featured": false
+  },
+  {
+    "sku": "GS-GYM-001",
+    "slug": "gym-equipment-cable-assembly",
+    "name": "Gym Equipment Cable Assembly",
+    "category": "gym-fitness-cables",
+    "summary": "Gym Equipment Cable Assembly for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Gym Equipment Cable Assembly for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "fitness-equipment"
+    ],
+    "customization": [
+      "machine model sample",
+      "cable length",
+      "coating",
+      "terminal type",
+      "packaging"
+    ],
+    "features": [
+      "fitness machine cable use",
+      "coated cable option",
+      "terminal matching",
+      "sample-based replacement support"
+    ],
+    "image": "/images/products/gym-equipment-cable-assembly/main.webp",
+    "gallery": [
+      "/images/products/gym-equipment-cable-assembly/detail-01.webp",
+      "/images/products/gym-equipment-cable-assembly/detail-03.webp",
+      "/images/products/gym-equipment-cable-assembly/detail-04.webp",
+      "/images/products/gym-equipment-cable-assembly/detail-05.webp"
+    ],
+    "featured": true
+  },
+  {
+    "sku": "GS-GYM-002",
+    "slug": "weight-stack-cable-assembly",
+    "name": "Weight Stack Cable Assembly",
+    "category": "gym-fitness-cables",
+    "summary": "Weight Stack Cable Assembly for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Weight Stack Cable Assembly for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "fitness-equipment"
+    ],
+    "customization": [
+      "overall length",
+      "terminal dimensions",
+      "coating color",
+      "sample matching"
+    ],
+    "features": [
+      "weight stack machine use",
+      "custom end terminal",
+      "coated cable option",
+      "sample-based quotation"
+    ],
+    "image": "/images/products/weight-stack-cable-assembly/main.webp",
+    "gallery": [],
+    "featured": false
+  },
+  {
+    "sku": "GS-GYM-003",
+    "slug": "pvc-coated-gym-cable",
+    "name": "PVC Coated Gym Cable",
+    "category": "gym-fitness-cables",
+    "summary": "PVC Coated Gym Cable for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "PVC Coated Gym Cable for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "fitness-equipment"
+    ],
+    "customization": [
+      "coating color",
+      "cable length",
+      "terminal type",
+      "packaging"
+    ],
+    "features": [
+      "PVC coated cable",
+      "fitness equipment application",
+      "custom terminal support",
+      "bulk replacement sourcing"
+    ],
+    "image": "/images/products/pvc-coated-gym-cable/main.webp",
+    "gallery": [
+      "/images/products/pvc-coated-gym-cable/application-02.webp",
+      "/images/products/pvc-coated-gym-cable/application-03.webp",
+      "/images/products/pvc-coated-gym-cable/application-04.webp",
+      "/images/products/pvc-coated-gym-cable/application-05.webp",
+      "/images/products/pvc-coated-gym-cable/application-06.webp"
+    ],
+    "featured": false
+  },
+  {
+    "sku": "GS-GYM-004",
+    "slug": "fitness-cable-with-ball-end",
+    "name": "Fitness Cable with Ball End",
+    "category": "gym-fitness-cables",
+    "summary": "Fitness Cable with Ball End for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Fitness Cable with Ball End for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "fitness-equipment"
+    ],
+    "customization": [
+      "ball end size",
+      "cable length",
+      "coating",
+      "opposite terminal"
+    ],
+    "features": [
+      "ball end terminal",
+      "coated cable option",
+      "machine sample matching",
+      "drawing review"
+    ],
+    "image": "/images/products/fitness-cable-with-ball-end/main.webp",
+    "gallery": [],
+    "featured": false
+  },
+  {
+    "sku": "GS-FIT-001",
+    "slug": "wire-rope-thimble",
+    "name": "Wire Rope Thimble",
+    "category": "wire-rope-fittings",
+    "summary": "Wire Rope Thimble for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Wire Rope Thimble for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "industrial-assemblies",
+      "marine"
+    ],
+    "customization": [
+      "material",
+      "size",
+      "finish",
+      "packaging"
+    ],
+    "features": [
+      "loop protection fitting",
+      "matched with wire rope assemblies",
+      "material selection",
+      "bulk packaging review"
+    ],
+    "image": "/images/products/wire-rope-thimble/main.webp",
+    "gallery": [
+      "/images/products/wire-rope-thimble/detail-02.webp",
+      "/images/products/wire-rope-thimble/detail-03.webp",
+      "/images/products/wire-rope-thimble/detail-04.webp"
+    ],
+    "featured": false
+  },
+  {
+    "sku": "GS-FIT-002",
+    "slug": "wire-rope-sleeve",
+    "name": "Wire Rope Sleeve",
+    "category": "wire-rope-fittings",
+    "summary": "Wire Rope Sleeve for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Wire Rope Sleeve for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "industrial-assemblies",
+      "security-cables"
+    ],
+    "customization": [
+      "material",
+      "size",
+      "finish",
+      "packaging"
+    ],
+    "features": [
+      "crimp sleeve option",
+      "matched cable diameter review",
+      "material selection",
+      "assembly support"
+    ],
+    "image": "/images/products/wire-rope-sleeve/main.webp",
+    "gallery": [
+      "/images/products/wire-rope-sleeve/detail-02.webp",
+      "/images/products/wire-rope-sleeve/detail-03.webp"
+    ],
+    "featured": false
+  },
+  {
+    "sku": "GS-FIT-003",
+    "slug": "swage-terminal",
+    "name": "Swage Terminal",
+    "category": "wire-rope-fittings",
+    "summary": "Swage Terminal for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Swage Terminal for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "architectural",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "terminal style",
+      "thread type",
+      "material",
+      "finish"
+    ],
+    "features": [
+      "swaged end fitting",
+      "thread and geometry options",
+      "material selection",
+      "drawing-based confirmation"
+    ],
+    "image": "/images/products/swage-terminal/main.webp",
+    "gallery": [],
+    "featured": false
+  },
+  {
+    "sku": "GS-FIT-004",
+    "slug": "cable-gripper",
+    "name": "Cable Gripper",
+    "category": "wire-rope-fittings",
+    "summary": "Cable Gripper for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "description": "Cable Gripper for B2B buyers who need configurable cable length, material, coating and fitting options based on drawings or application requirements.",
+    "applications": [
+      "architectural",
+      "industrial-assemblies"
+    ],
+    "customization": [
+      "thread type",
+      "gripper body style",
+      "cable diameter compatibility",
+      "finish"
+    ],
+    "features": [
+      "adjustable hanging fitting",
+      "matched cable review",
+      "thread selection",
+      "kit sourcing support"
+    ],
+    "image": "/images/products/cable-gripper/main.webp",
+    "gallery": [],
+    "featured": true
+  }
+]

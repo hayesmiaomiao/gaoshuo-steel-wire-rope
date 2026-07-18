@@ -1,37 +1,44 @@
 import { ProductGrid } from "@/components/product/ProductGrid";
+import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
+import { LinkCard } from "@/components/ui/LinkCard";
+import { PageHeader } from "@/components/ui/PageHeader";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { TrustNotice } from "@/components/ui/TrustNotice";
-import { ApplicationCard } from "@/components/ui/ApplicationCard";
-import { getPublishedProducts } from "@/lib/products/data";
-import { productCategories } from "@/config/pages";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { getCategories } from "@/lib/data/categories";
+import { getProducts } from "@/lib/data/products";
 import { createMetadata } from "@/lib/seo/metadata";
+import { breadcrumbSchema, collectionSchema } from "@/lib/seo/schema";
 
-export const metadata = createMetadata({
-  title: "Steel Wire Rope Products",
-  description: "Browse published steel wire rope products and category frameworks for verified B2B procurement.",
-  path: "/products"
-});
+const description = "Browse custom wire rope assemblies, safety lanyards, suspension kits, control cables, gym cables and wire rope fittings.";
+
+export const metadata = createMetadata({ title: "Wire Rope and Cable Products", description, path: "/products" });
 
 export default function ProductsPage() {
+  const products = getProducts();
+  const categories = getCategories();
+  const breadcrumbs = [{ name: "Home", path: "/" }, { name: "Products", path: "/products" }];
+
   return (
-    <section className="py-12">
-      <div className="container">
-        <h1 className="text-4xl font-black text-[#171717]">Steel Wire Rope Products</h1>
-        <p className="mt-4 max-w-3xl text-lg leading-8 text-[#555]">Product pages are generated from structured data. Draft records stay hidden until verified and published.</p>
-        <div className="mt-8"><TrustNotice /></div>
-        <div className="mt-12">
-          <SectionHeading title="Product Categories" />
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {productCategories.map((category) => (
-              <ApplicationCard key={category.slug} title={category.title} href={`/products/${category.slug}`} description={category.description} />
+    <>
+      <JsonLd data={[breadcrumbSchema(breadcrumbs), collectionSchema("Wire Rope and Cable Products", description, "/products")]} />
+      <div className="container"><Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Products" }]} /></div>
+      <PageHeader eyebrow="Product center" title="Wire Rope and Cable Products" description={description} />
+      <section className="section">
+        <div className="container">
+          <SectionHeading title="Shop by product category" description="Six product routes organize the 26 available product pages by typical sourcing need." />
+          <div className="cardGrid">
+            {categories.map((category) => (
+              <LinkCard description={category.description} href={`/products/category/${category.slug}`} key={category.slug} label="View products" title={category.name} />
             ))}
           </div>
         </div>
-        <div className="mt-12">
-          <SectionHeading title="Published Products" />
-          <ProductGrid products={getPublishedProducts()} />
+      </section>
+      <section className="sectionAlt">
+        <div className="container">
+          <SectionHeading title="All products" description={`${products.length} products available for requirement-based quotation.`} />
+          <ProductGrid products={products} />
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

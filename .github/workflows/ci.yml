@@ -13,12 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NEXT_PUBLIC_SITE_URL: http://localhost:3000
-      LEAD_PROVIDER: development
-      NEXT_PUBLIC_GA_ID: ""
-      LEAD_NOTIFICATION_EMAIL: ""
-      RESEND_API_KEY: ""
-      MAX_UPLOAD_SIZE_MB: "5"
-      ALLOWED_UPLOAD_TYPES: application/pdf,image/jpeg,image/jpg,image/png
+      STAGING_NOINDEX: "true"
     steps:
       - name: Checkout
         uses: actions/checkout@v6

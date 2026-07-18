@@ -3,8 +3,6 @@ node_modules/
 out/
 dist/
 coverage/
-playwright-report/
-test-results/
 .env
 .env.*
 !.env.example
@@ -12,10 +10,7 @@ test-results/
 npm-debug.log*
 .DS_Store
 Thumbs.db
-.turbo/
 .vitest/
 tsconfig.tsbuildinfo
-public/uploads/
 tmp/
 temp/
-image-import/

@@ -1,0 +1,41 @@
+.gallery {
+  min-width: 0;
+}
+
+.mainImage {
+  position: relative;
+  aspect-ratio: 1;
+  border: 1px solid var(--color-border);
+  background: white;
+}
+
+.mainImage img,
+.thumbnails img {
+  object-fit: contain;
+  padding: 0.75rem;
+}
+
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.thumbnails button {
+  position: relative;
+  aspect-ratio: 1;
+  border: 1px solid var(--color-border);
+  background: white;
+  cursor: pointer;
+}
+
+.thumbnails button.active {
+  border: 2px solid var(--color-accent);
+}
+
+@media (max-width: 480px) {
+  .thumbnails {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

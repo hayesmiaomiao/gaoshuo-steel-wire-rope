@@ -1,28 +1,12 @@
 import type { MetadataRoute } from "next";
-import { siteConfig } from "@/config/site";
-import { env } from "@/lib/env";
+import { getSiteUrl, isStagingNoindex } from "@/lib/seo/metadata";
 
 export default function robots(): MetadataRoute.Robots {
-  if (env.stagingNoindex) {
-    return {
-      rules: [
-        {
-          userAgent: "*",
-          disallow: "/"
-        }
-      ],
-      sitemap: `${siteConfig.domain}/sitemap.xml`
-    };
+  if (isStagingNoindex()) {
+    return { rules: { userAgent: "*", disallow: "/" } };
   }
-
   return {
-    rules: [
-      {
-        userAgent: "*",
-        allow: "/",
-        disallow: ["/thank-you"]
-      }
-    ],
-    sitemap: `${siteConfig.domain}/sitemap.xml`
+    rules: { userAgent: "*", allow: "/" },
+    sitemap: new URL("/sitemap.xml", getSiteUrl()).toString()
   };
 }

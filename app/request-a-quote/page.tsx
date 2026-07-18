@@ -1,18 +1,27 @@
-import { RFQForm } from "@/components/rfq/RFQForm";
+import { RFQForm } from "@/components/forms/RFQForm";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
+import { PageHeader } from "@/components/ui/PageHeader";
 import { createMetadata } from "@/lib/seo/metadata";
+import { breadcrumbSchema, contactSchema } from "@/lib/seo/schema";
 
-export const metadata = createMetadata({ title: "Request a Quote", description: "Request a steel wire rope or custom wire rope assembly quotation.", path: "/request-a-quote" });
+export const metadata = createMetadata({
+  title: "Request a Wire Rope Assembly Quote",
+  description: "Prepare a custom wire rope or cable assembly inquiry with application, dimensions, materials, fittings and quantity.",
+  path: "/request-a-quote"
+});
 
-export default function RequestQuotePage() {
+type QuotePageProps = { searchParams: Promise<{ product?: string }> };
+
+export default async function QuotePage({ searchParams }: QuotePageProps) {
+  const { product = "" } = await searchParams;
+  const breadcrumbs = [{ name: "Home", path: "/" }, { name: "Request a Quote", path: "/request-a-quote" }];
   return (
-    <section className="py-12">
-      <div className="container">
-        <h1 className="text-4xl font-black text-[#171717]">Request a Quote</h1>
-        <p className="mt-4 max-w-3xl text-lg leading-8 text-[#555]">Share product requirements, application, drawing and quantity. Unknown values can be confirmed during review.</p>
-        <div className="mt-10">
-          <RFQForm sourcePage="/request-a-quote" />
-        </div>
-      </div>
-    </section>
+    <>
+      <JsonLd data={[breadcrumbSchema(breadcrumbs), contactSchema()]} />
+      <div className="container"><Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Request a Quote" }]} /></div>
+      <PageHeader eyebrow="RFQ" title="Request a Wire Rope Assembly Quote" description="Share the available product, application and dimensional information. No inquiry will be transmitted until an official delivery channel is configured." />
+      <section className="sectionAlt"><div className="container"><RFQForm defaultProduct={product} /></div></section>
+    </>
   );
 }

@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "marine",
+    "name": "Marine",
+    "description": "Steel wire rope sourcing for marine procurement contexts where material, coating and corrosion requirements must be confirmed."
+  },
+  {
+    "slug": "crane-and-lifting",
+    "name": "Crane and Lifting",
+    "description": "Selection framework for lifting-related inquiries. Final suitability must be verified against application requirements and standards."
+  },
+  {
+    "slug": "architectural",
+    "name": "Architectural",
+    "description": "Wire rope procurement for architectural projects where finish, diameter, fittings and documentation need confirmation."
+  },
+  {
+    "slug": "security-cables",
+    "name": "Security Cables",
+    "description": "Wire rope and coated cable sourcing for security cable assemblies and custom lengths."
+  },
+  {
+    "slug": "control-cables",
+    "name": "Control Cables",
+    "description": "Selection support for control cable sourcing where construction, flexibility and terminals are specified by drawings."
+  },
+  {
+    "slug": "fitness-equipment",
+    "name": "Fitness Equipment",
+    "description": "Wire rope procurement framework for equipment manufacturers using drawings and verified product requirements."
+  },
+  {
+    "slug": "industrial-assemblies",
+    "name": "Industrial Assemblies",
+    "description": "Custom wire rope assemblies for industrial procurement, packaging and repeat purchasing workflows."
+  }
+]

@@ -1,6 +1,6 @@
 {
   "name": "gaoshuo-steel-wire-rope",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "engines": {
     "node": "22.x"
@@ -11,54 +11,25 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "validate:products": "tsx scripts/validate-products.ts",
-    "check:links": "tsx scripts/check-links.ts",
-    "check:seo": "tsx scripts/check-seo.ts",
-    "check:content": "tsx scripts/check-content.ts",
-    "check:brand-migration": "tsx scripts/check-brand-migration.ts",
-    "check:contact-leaks": "tsx scripts/check-contact-leaks.ts",
-    "check:brand": "npm run check:brand-migration",
-    "check:contacts": "npm run check:contact-leaks",
-    "check:duplicate-products": "tsx scripts/check-duplicate-products.ts",
-    "audit:reports": "tsx scripts/generate-audit-reports.ts",
-    "report:products": "tsx scripts/generate-product-report.ts",
-    "images:audit": "tsx scripts/audit-product-images.ts",
-    "images:folders": "tsx scripts/check-product-image-folders.ts",
-    "images:rename:plan": "tsx scripts/rename-product-source-images.ts --plan",
-    "images:rename": "tsx scripts/rename-product-source-images.ts --execute",
-    "images:rename:rollback": "tsx scripts/rename-product-source-images.ts --rollback-latest",
-    "images:main:plan": "tsx scripts/select-product-main-images.ts --plan",
-    "images:main:select": "tsx scripts/select-product-main-images.ts --execute",
-    "images:main:rollback": "tsx scripts/select-product-main-images.ts --rollback-latest",
-    "images:process:plan": "tsx scripts/process-product-images.ts --plan",
-    "images:process": "tsx scripts/process-product-images.ts --execute",
-    "images:process:force": "tsx scripts/process-product-images.ts --execute --force",
-    "images:check": "tsx scripts/check-product-images.ts",
+    "validate": "tsx scripts/validate-data.ts",
     "test": "vitest run",
-    "verify": "npm run lint && npm run typecheck && npm run validate:products && npm run check:content && npm run check:duplicate-products && npm run check:brand-migration && npm run check:contact-leaks && npm run check:links && npm run check:seo && npm run test && npm run build"
+    "verify": "npm run lint && npm run typecheck && npm run validate && npm run test && npm run build"
   },
   "dependencies": {
-    "@hookform/resolvers": "^3.10.0",
-    "gray-matter": "^4.0.3",
-    "next": "^15.3.5",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-hook-form": "^7.60.0",
-    "sharp": "^0.35.3",
-    "zod": "^3.25.76"
+    "next": "15.5.20",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "server-only": "0.0.1",
+    "zod": "3.25.76"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.11",
-    "@testing-library/react": "^16.3.0",
-    "@types/node": "^24.0.14",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "eslint": "^9.31.0",
-    "eslint-config-next": "^15.3.5",
-    "jsdom": "^26.1.0",
-    "tailwindcss": "^4.1.11",
-    "tsx": "^4.20.3",
-    "typescript": "^5.8.3",
-    "vitest": "^3.2.4"
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.1",
+    "eslint-config-next": "15.5.20",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3",
+    "vitest": "3.2.7"
   }
 }
