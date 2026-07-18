@@ -91,6 +91,34 @@ describe("product specifications", () => {
     expect(screen.queryByText("TBD")).toBeNull();
   });
 
+  it("safely omits missing and not-applicable fields", () => {
+    const product = getPublishedProducts()[0];
+    const specification = createSpecificationTemplate(product);
+    specification.verification_status = "incomplete";
+    specification.material = undefined as unknown as string;
+    specification.material_grade = "N/A";
+    specification.construction = "Confirmed Construction";
+
+    expect(() => render(<TechnicalSpecificationTable category={product.category} specification={specification} />)).not.toThrow();
+    expect(screen.getByText("Confirmed Construction")).toBeDefined();
+    expect(screen.queryByText("TBD")).toBeNull();
+    expect(screen.queryByText("N/A")).toBeNull();
+  });
+
+  it("passes only serializable specification values to the client RFQ form", () => {
+    const product = getPublishedProducts()[0];
+    const specification = readProductSpecifications().specifications.find((record) => record.sku === product.sku);
+    const props = {
+      sourcePage: `/products/${product.slug}`,
+      product: product.product_name,
+      productSku: product.sku,
+      construction: isConfirmedSpecificationValue(specification?.construction) ? specification?.construction : ""
+    };
+
+    expect(JSON.parse(JSON.stringify(props))).toEqual(props);
+    expect(Object.values(props).every((value) => typeof value === "string")).toBe(true);
+  });
+
   it("marks accepted approximate fields without exposing source links", () => {
     const product = getPublishedProducts()[0];
     const specification = createSpecificationTemplate(product);
